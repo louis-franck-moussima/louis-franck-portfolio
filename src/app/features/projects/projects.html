@@ -1,0 +1,97 @@
+<section class="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
+
+    <!-- Page heading -->
+    <div class="max-w-4xl">
+
+        <p class="text-sm font-semibold uppercase
+             tracking-[0.2em]
+             text-cyan-300">
+            Projects
+        </p>
+
+        <h1 class="mt-4 text-4xl font-semibold
+             tracking-tight text-white
+             sm:text-5xl lg:text-6xl">
+            Products and engineering work.
+        </h1>
+
+        <p class="mt-6 max-w-3xl
+             text-lg leading-8
+             text-slate-400">
+            A collection of products, business applications
+            and open-source engineering projects I've designed,
+            developed or contributed to.
+        </p>
+
+    </div>
+
+
+    <!-- Filters -->
+    <div class="mt-12 flex flex-wrap gap-3">
+
+        @for (
+        filter of filters;
+        track filter.value
+        ) {
+
+        <button 
+        type="button" 
+        (click)="setFilter(filter.value)" 
+        [class]="
+          activeFilter() === filter.value
+            ? 'rounded-xl border border-cyan-400 bg-cyan-400 px-4 py-2 text-sm font-medium text-slate-950 transition'
+            : 'rounded-xl border border-white/10 px-4 py-2 text-sm font-medium text-slate-400 transition hover:border-white/20 hover:text-white'
+         ">
+            {{ filter.label }}
+        </button>
+
+        }
+
+    </div>
+
+
+    <!-- Number of projects -->
+    <div class="mt-8 flex items-center
+           justify-between
+           border-b border-white/10
+           pb-5">
+
+        <p class="text-sm text-slate-500">
+            {{ filteredProjects().length }}
+            projects
+        </p>
+
+    </div>
+
+
+    <!-- Project grid -->
+    <div class="mt-10 grid gap-6
+           md:grid-cols-2">
+
+        @for (
+        project of filteredProjects();
+        track project.slug
+        ) {
+
+        <app-project-card [project]="project" />
+
+        } @empty {
+
+        <div class="col-span-full
+               rounded-3xl
+               border border-white/10
+               p-10
+               text-center">
+
+            <p class="text-slate-400">
+                No projects in this category yet.
+            </p>
+
+        </div>
+
+        }
+
+    </div>
+
+
+</section>

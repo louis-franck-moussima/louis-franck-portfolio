@@ -1,0 +1,60 @@
+<header
+  class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl"
+>
+  <div
+    class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8"
+  >
+    <!-- Brand -->
+    <a routerLink="/" class="flex items-center gap-3">
+      <div
+        class="grid h-10 w-10 place-items-center rounded-xl border border-cyan-400/30 bg-cyan-400/10 font-bold text-cyan-300"
+      >
+        LF
+      </div>
+
+      <div>
+        <p class="font-semibold tracking-tight text-white">
+          Louis Franck
+        </p>
+
+        <p class="text-xs text-slate-400">
+          Full-Stack Developer
+        </p>
+      </div>
+    </a>
+
+    <!-- Desktop navigation -->
+    <nav class="hidden items-center gap-6 text-sm md:flex">
+      <a
+        routerLink="/projects"
+        routerLinkActive="text-white"
+        class="text-slate-400 transition hover:text-white"
+      >
+        Projects
+      </a>
+
+      <a
+        routerLink="/services"
+        routerLinkActive="text-white"
+        class="text-slate-400 transition hover:text-white"
+      >
+        Services
+      </a>
+
+      <a
+        routerLink="/about"
+        routerLinkActive="text-white"
+        class="text-slate-400 transition hover:text-white"
+      >
+        About
+      </a>
+
+      <a
+        routerLink="/contact"
+        class="rounded-xl border border-white/15 px-4 py-2 font-medium text-white transition hover:border-cyan-400/50 hover:bg-cyan-400/10"
+      >
+        Contact
+      </a>
+    </nav>
+  </div>
+</header>
