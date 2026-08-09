@@ -1,59 +1,164 @@
-# LouisPortfolio
+![LF Portfolio Preview](public/social-preview.png)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+# LF Portfolio
 
-## Development server
+Personal developer portfolio showcasing selected full-stack, product, and open-source projects.
 
-To start a local development server, run:
+Built with Angular and Tailwind CSS, with a focus on clean architecture, responsive design, project case studies, and production-ready presentation.
+
+## Live Demo
+
+[View Portfolio](https://YOUR-VERCEL-URL.vercel.app)
+
+## About
+
+I’m a full-stack developer and product builder working primarily with:
+
+- Angular
+- TypeScript
+- Java
+- Spring Boot
+- Spring Security
+- MySQL
+- Docker
+- Cloudflare
+- Cloud infrastructure
+- REST APIs
+
+I build applications from product idea through implementation and deployment.
+
+## Featured Projects
+
+### Studevia
+A SaaS platform supporting international students through study and visa preparation workflows.
+
+**Stack:** Angular, Spring Boot, Java, MySQL, Docker, Caddy, Cloudflare, OVH, Stripe, Cloudinary, Brevo, ClamAV
+
+### TSDB — The Streaming Database
+A media discovery platform for movies, TV shows, actors, companies, channels, public IPTV sources, and selected legally available streaming content.
+
+**Stack:** Angular, Spring Boot, Oracle Autonomous Database, Redis, Nginx, Cloudflare
+
+### Digital Wedding Invitation Platform
+A digital wedding experience with RSVP management, personalized confirmations, QR-based guest check-in, admin tools, email delivery, and PDF generation.
+
+**Stack:** Angular, Firebase, Firestore, Vercel, Resend, Dopio, QR Code, jsPDF
+
+### Anet Patiss
+A full-stack business platform for a custom cake and pastry brand, including orders, payments, tracking, reviews, media management, and an admin dashboard.
+
+**Stack:** Angular, Spring Boot, MySQL, Stripe, Cloudinary, Geoapify, Brevo, Cloudflare, OVH
+
+### EUID — Evolutionary Unique Identifier
+An open-source high-performance UUID v8 generator for distributed Java systems.
+
+EUID provides time-ordered, topology-aware, decodable identifiers with Base58 support and dedicated JMH benchmarks.
+
+**Repository:**  
+https://github.com/louis-franck-moussima/euid-java
+
+## Portfolio Features
+
+- Responsive design
+- Project filtering
+- Detailed project case studies
+- Architecture and deployment visuals
+- Open Graph social sharing metadata
+- SEO metadata
+- Sitemap and robots.txt
+- Custom favicon and social preview
+- SSR / prerender-ready Angular setup
+- Mobile-friendly navigation
+
+## Tech Stack
+
+### Frontend
+- Angular
+- TypeScript
+- Tailwind CSS
+- HTML
+- CSS
+
+### Backend
+- Java
+- Spring Boot
+- Spring Security
+- REST APIs
+
+### Data
+- MySQL
+- Oracle
+- Firebase
+- Redis
+
+### Infrastructure
+- Docker
+- Docker Compose
+- Caddy
+- Nginx
+- Cloudflare
+- OVH
+
+### Tools
+- Git
+- GitHub
+- Postman
+- Linux
+
+## Local Development
+
+Clone the repository:
 
 ```bash
-ng serve
+git clone https://github.com/louis-franck-moussima/louis-franck-portfolio
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+### Project Structure
+src/app/
+├── core/
+│   ├── models/
+│   └── services/
+│
+├── data/
+│   └── projects.data.ts
+│
+├── features/
+│   ├── home/
+│   ├── projects/
+│   ├── project-detail/
+│   ├── services/
+│   ├── about/
+│   ├── contact/
+│   └── not-found/
+│
+└── shared/
+    └── components/
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
 
-## Building
 
-To build the project run:
+### Security
 
-```bash
-ng build
-```
+This repository does not contain production secrets.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+API keys, passwords, tokens, private credentials, and environment-specific configuration should never be committed to the repository.
 
-## Running unit tests
+### Contact
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+For freelance work, collaboration, or technical opportunities:
 
-```bash
-ng test
-```
+LinkedIn: https://www.linkedin.com/in/louis-franck-moussima-489213266
+Email: louisfranckm4@gmail.com
+GitHub: https://github.com/louis-franck-moussima
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+### License
 
-```bash
-ng e2e
-```
+This portfolio source code is provided for reference and demonstration purposes.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Project names, branding, screenshots, and project-specific assets may have separate ownership or usage restrictions.
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
