@@ -8,7 +8,7 @@ Built with Angular and Tailwind CSS, with a focus on clean architecture, respons
 
 ## Live Demo
 
-[View Portfolio](https://YOUR-VERCEL-URL.vercel.app)
+[View Portfolio](https://louis-franck-portfolio.vercel.app/)
 
 ## About
 
