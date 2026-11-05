@@ -2,6 +2,135 @@ import { Project } from '../core/models/project';
 
 export const PROJECTS: Project[] = [
     {
+        slug: 'oepar',
+        name: 'OEPAR — Public Evidence Platform',
+        eyebrow: 'Civic Tech · Public Finance · Evidence Traceability',
+
+        type: 'product',
+
+        description:
+            'An independent public-interest platform that connects public claims, spending, procurement and measurable outcomes to the original evidence behind them.',
+
+        summary:
+            'OEPAR — Organisation for Evidence, Public Accountability and Results — collects, preserves and normalizes public records so journalists, researchers, NGOs and citizens can inspect evidence chains across multiple European jurisdictions.',
+
+        role: 'Founder & Full-Stack Engineer',
+
+        status: 'Deployed',
+
+        technologies: [
+            'Angular',
+            'TypeScript',
+            'Java',
+            'Spring Boot',
+            'Spring Security',
+            'PostgreSQL',
+            'Flyway',
+            'Docker',
+            'Northflank',
+            'REST APIs',
+            'Apache PDFBox',
+            'Apache POI',
+            'JSoup',
+            'Testcontainers',
+            'Internationalization'
+        ],
+
+        highlights: [
+            'Designed a public-interest evidence platform for tracing claims, contracts, spending, delivery and results',
+            'Integrated public procurement and financial sources across France, Belgium, the United Kingdom, England and Wales',
+            'Built source adapters and ingestion workflows for official APIs, datasets, documents and statistical records',
+            'Preserved raw source snapshots and SHA-256 checksums to support traceability and detect later revisions',
+            'Normalized heterogeneous public records into searchable and comparable evidence',
+            'Built public finance, procurement, investigation, programme and accountability-trace experiences',
+            'Created a private editorial and evidence-administration workspace',
+            'Implemented bilingual English and French interfaces',
+            'Added PostgreSQL full-text search and versioned database migrations with Flyway',
+            'Secured administrative workflows with Spring Security, CSRF protection and request rate limiting',
+            'Implemented document extraction for PDF, spreadsheet, CSV and HTML sources',
+            'Containerized and deployed the Angular frontend and Spring Boot backend on Northflank'
+        ],
+
+        challenge:
+            'Public spending evidence is fragmented across jurisdictions, portals, APIs, spreadsheets, PDFs and changing government websites. Records often use different formats and accounting scopes, making it difficult to connect a public claim to the contracts, spending, delivery evidence and limitations behind it without overstating what the data proves.',
+
+        solution:
+            'I built OEPAR as an Angular and Spring Boot platform backed by PostgreSQL. Dedicated adapters collect official public records, preserve raw snapshots and checksums, normalize evidence into a consistent model and expose reproducible links between claims, sources, calculations and limitations. A separate editorial workspace supports review, monitoring, corrections and publication workflows.',
+
+        result:
+            'OEPAR is deployed on Northflank with mapped evidence sources across several European jurisdictions and a foundation for collaboration with journalists, NGOs, researchers and public-accountability organizations.',
+
+        sections: [
+            {
+                title: 'Public evidence, not unsupported conclusions',
+                content:
+                    'OEPAR follows public claims from announcement to contract, spending, delivery and measurable results. Each conclusion remains connected to its original sources, while missing evidence, incompatible scopes and methodological limits stay visible to the reader.',
+                image:
+                    '/images/projects/oepar/oepar-home.png'
+            },
+            {
+                title: 'Evidence methodology',
+                content:
+                    'The platform separates source records, normalized data, deterministic calculations, observations, interpretations and limitations. Raw snapshots and checksums preserve provenance so that later source changes and corrections can be identified rather than silently replacing earlier evidence states.',
+                image:
+                    '/images/projects/oepar/methodology-diagram.png'
+            },
+            {
+                title: 'Multi-jurisdiction source coverage',
+                content:
+                    'OEPAR maps procurement, budget execution, annual accounts, tax receipts and statistical evidence from France, Belgium, the United Kingdom and Wales, while explicitly showing where comparable evidence is unavailable or cannot safely be attributed to a narrower jurisdiction.',
+                image:
+                    '/images/projects/oepar/oepar-sources.png'
+            },
+            {
+                title: 'Data ingestion and normalization',
+                content:
+                    'The Spring Boot backend uses dedicated source adapters and importers to process official APIs, CSV files, spreadsheets, PDFs and HTML documents. Heterogeneous records are normalized into PostgreSQL and indexed for evidence search and comparison.',
+                image:
+                    '/images/projects/oepar/oepar-search.png'
+            },
+            {
+                title: 'Editorial and investigation workflows',
+                content:
+                    'A private operations workspace supports investigation discovery, editorial drafts, programme candidates, evidence feedback, source monitoring, import previews and transparent revisions to published work.',
+                image:
+                    '/images/projects/oepar/oepar-investigations.png'
+            },
+            {
+                title: 'Security and deployment readiness',
+                content:
+                    'Administrative routes are protected with Spring Security, session-based authentication, CSRF protection and endpoint rate limits. The containerized frontend and backend are deployed on Northflank, database changes are managed through Flyway, and integration tests use Testcontainers with PostgreSQL.',
+                image:
+                    '/images/projects/oepar/oepar-traces.png'
+            }
+        ],
+
+        featured: true,
+
+        liveUrl:
+            'https://p01--oepar-front--kj4dhp54lvvg.code.run/',
+
+        liveLabel:
+            'Visit OEPAR',
+
+        coverImage:
+            '/images/projects/oepar/oepar-home.png',
+
+        screenshots: [
+            '/images/projects/oepar/oepar-home.png',
+            '/images/projects/oepar/oepar-search.png',
+            '/images/projects/oepar/oepar-investigations.png',
+            '/images/projects/oepar/oepar-treasury.png',
+            '/images/projects/oepar/oepar-sources.png',
+            '/images/projects/oepar/oepar-traces.png',
+            '/images/projects/oepar/oepar-join.png'
+        ],
+
+        architectureImage:
+            '/images/projects/oepar/methodology-diagram.png'
+    },
+
+    {
         slug: 'studevia',
         name: 'Studevia',
         eyebrow: 'SaaS · Education · Visa Preparation',
