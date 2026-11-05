@@ -40,6 +40,9 @@ export class ProjectDetail {
       image:
         this.project.coverImage,
 
+      url:
+        `/projects/${this.project.slug}`,
+
       type:
         'article'
     });

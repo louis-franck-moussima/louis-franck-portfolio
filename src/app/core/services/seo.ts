@@ -13,11 +13,23 @@ export interface SeoData {
   providedIn: 'root',
 })
 export class Seo {
-  
-   private readonly title = inject(Title);
+  private readonly title = inject(Title);
   private readonly meta = inject(Meta);
 
+  private readonly siteUrl =
+    'https://louis-franck-portfolio.vercel.app';
+
+  private absoluteUrl(value: string): string {
+    return new URL(value, this.siteUrl).toString();
+  }
+
   update(data: SeoData): void {
+
+    const image = this.absoluteUrl(
+      data.image ?? '/social-preview.png'
+    );
+
+    const url = this.absoluteUrl(data.url ?? '/');
 
     this.title.setTitle(data.title);
 
@@ -41,19 +53,35 @@ export class Seo {
       content: data.type ?? 'website'
     });
 
-    if (data.image) {
-      this.meta.updateTag({
-        property: 'og:image',
-        content: data.image
-      });
-    }
+    this.meta.updateTag({
+      property: 'og:url',
+      content: url
+    });
 
-    if (data.url) {
-      this.meta.updateTag({
-        property: 'og:url',
-        content: data.url
-      });
-    }
+    this.meta.updateTag({
+      property: 'og:image',
+      content: image
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:secure_url',
+      content: image
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:type',
+      content: 'image/png'
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:width',
+      content: '1200'
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:height',
+      content: '630'
+    });
 
     this.meta.updateTag({
       name: 'twitter:card',
@@ -70,11 +98,9 @@ export class Seo {
       content: data.description
     });
 
-    if (data.image) {
-      this.meta.updateTag({
-        name: 'twitter:image',
-        content: data.image
-      });
-    }
+    this.meta.updateTag({
+      name: 'twitter:image',
+      content: image
+    });
   }
 }

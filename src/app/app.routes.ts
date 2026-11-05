@@ -19,6 +19,12 @@ export const routes: Routes = [
   },
 
   {
+    path: 'projectson',
+    redirectTo: 'projects',
+    pathMatch: 'full'
+  },
+
+  {
     path: 'projects/:slug',
     loadComponent: () =>
       import('./features/project-detail/project-detail')

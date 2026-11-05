@@ -28,7 +28,13 @@ export class Home {
         'Full-stack developer building Angular, Java, Spring Boot and cloud applications from product idea to production.',
 
       image:
-        '/images/social/portfolio-preview.webp'
+        '/social-preview.png',
+
+      url:
+        '/',
+
+      type:
+        'website'
     });
   }
 
