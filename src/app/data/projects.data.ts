@@ -410,7 +410,7 @@ export const PROJECTS: Project[] = [
         featured: true,
 
         liveUrl:
-            'https://www.tsdb.pw/home',
+            'https://www.tsdb.online/home',
 
         liveLabel:
             'Visit TSDB',
