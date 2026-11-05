@@ -611,7 +611,7 @@ export const PROJECTS: Project[] = [
 
         role: 'Developer & Product Builder',
 
-        status: 'Ready for Deployment',
+        status: 'Deployed',
 
         technologies: [
             'Angular',
@@ -737,6 +737,12 @@ export const PROJECTS: Project[] = [
         ],
 
         featured: true,
+
+        liveUrl:
+            'https://p01--annet-patiss-web--kjgbwvcn6dcm.code.run/',
+
+        liveLabel:
+            'View Live Demo',
 
         coverImage:
             '/images/projects/anet-patiss/anet-patiss-cover.png',
